@@ -41,6 +41,9 @@ jobs:
           channel: 'stable'
           cache: true # Almacena en caché las dependencias para acelerar ejecuciones futuras
 
+      - name: List files (Debug)
+        run: ls -R
+
       # Instala las dependencias del proyecto definidas en pubspec.yaml
       - name: Install dependencies
         run: flutter pub get
